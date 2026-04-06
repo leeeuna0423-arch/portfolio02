@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="css/portfolio-style02.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="warp">
+        <header>
+            <div class="container">
+                <div class="left">
+                    <div class="icon-bt-left">
+                        <i class="bt fa-solid fa-bars"></i>
+                        <i class="bt fa-solid fa-bars"></i>
+                    </div>
+                    <div class="menu-wrap">
+                        <ul class="gnbn gnb">
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">home</div>
+                                            <div class="title">home</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[07]</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">about me</div>
+                                            <div class="title">about me</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[04]</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">work</div>
+                                            <div class="title">work</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[00]</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">prosce</div>
+                                            <div class="title">prosce</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[00]</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">contact me</div>
+                                            <div class="title">contact me</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[00]</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <nav>
+                        <ul class="gnb">
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">home</div>
+                                            <div class="title">home</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[00]</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">about me</div>
+                                            <div class="title">about me</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[00]</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">work</div>
+                                            <div class="title">work</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[00]</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">prosce</div>
+                                            <div class="title">prosce</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[00]</div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="title_b">
+                                        <div class="title_b_box">
+                                            <div class="title">contact me</div>
+                                            <div class="title">contact me</div>
+                                        </div>
+                                    </div>
+                                    <div class="number">[00]</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav> -->
+                </div>
+                <div class="right">
+                    <div class="icon-bt">
+                        <i class="bt fa-solid fa-phone"></i>
+                        <i class="bt fa-solid fa-envelope"></i>
+                        <img class="bt" src="./img/2111496.png" alt="카카오톡">
+                        <i class=" bt fa-solid fa-user"></i>
+                    </div>
+                    <div class="popup">
+                        <div class="popup-box phone">
+                            <img src="./img/mqr-b.png" alt="연락처">
+                            <div class="txt">
+                                <p>mobile</p>
+                                <p>010.6798.3299</p>
+                            </div>
+                        </div>
+                        <div class="popup-box mail">
+                            <img src="./img/email-qr-b.png" alt="이메일">
+                            <div class="txt">
+                                <p>e-mail</p>
+                                <p>leeeuna0423@naver.com</p>
+                            </div>
+                        </div>
+                        <div class="popup-box kakao">
+                            <img src="./img/kakao-qr-b.png" alt="카카오톡">
+                            <div class="txt">
+                                <p>kakao</p>
+                                <p>423_ea</p>
+                            </div>
+                        </div>
+                        <div class="popup-box profile">
+                            <div class="profile-left">
+                                <img src="./img/90.jpg" alt="내사진">
+                                <div class="profile-title">
+                                    <div class="title-box">
+                                        <p>birth</p>
+                                        <p>home</p>
+                                        <p>phone</p>
+                                        <p>e-mail</p>
+                                        <p>kakao</p>
+                                    </div>
+                                    <div class="text-box">
+                                        <p>1987.04.23</p>
+                                        <p>경기도 용인시 거주</p>
+                                        <p>010.6798.3299</p>
+                                        <p>leeeuna0423@naver.com</p>
+                                        <p>423_ea</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profile-right">
+                                <div class="profile-right-item">
+                                    <h5>work</h5>
+                                    <div class="item-txt">
+                                        <div class="number">
+                                            <p>2010 - 2012</p>
+                                            <p>2013 - 2014</p>
+                                            <p>2015 - 2024</p>
+                                        </div>
+                                        <div class="item-con">
+                                            <p>우리은행본사 / 편집디자인(행원)</p>
+                                            <p>새날기획 / 편집디자인</p>
+                                            <p>문컬렉션 / 웹디자인(팀장)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-right-item">
+                                    <h5>skills</h5>
+                                    <div class="item-txt">
+                                        <div class="number">
+                                            <img src="./img/ps.png" alt="포토샵">
+                                            <img src="./img/ai.png" alt="일러스트">
+                                            <img src="./img/pr.png" alt="프리미어프로">
+                                            <img src="./img/figma01.png" alt="피그마">
+                                        </div>
+                                        <div class="item-con">
+                                            <img src="./img/html.png" alt="HTML">
+                                            <img src="./img/css.png" alt="CSS">
+                                            <img src="./img/jq.png" alt="jQ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-right-item">
+                                    <h5>my keyword</h5>
+                                    <div class="item-txt">
+                                        <div class="number">
+                                            <p># 빠른 적응력</p>
+                                            <p># 올바른 인성</p>
+                                            <p># 협력</p>
+                                        </div>
+                                        <div class="item-con">
+                                            <p># 도전</p>
+                                            <p># 강한 책임감</p>
+                                            <p># 문제해결</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="me-box">
+                <div class="me-img">
+                    <img src="./img/LKET2383-1.jpg" alt="내사진">
+                </div>
+                <h5>I’m experienced<br><span>web designer</span></h5>
+
+            </div>
+        </header>
+        <main>
+            <section class="profile">
+                <div class="me-txt">
+                    <div class="introdution">
+                        <div class="intro-left">
+                            <p>이은아 / lee eun a</p>
+                            <p>1987.04.23</p>
+                            <p>경기도 용인시 거주</p>
+                        </div>
+                        <div class="intro-right">
+                            <p>contact</p>
+                            <p>010.6798.3299</p>
+                            <p>leeeuna0423@naver.com</p>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <h3>a</h3>
+                        <h3>b</h3>
+                        <h3>o</h3>
+                        <h3>u</h3>
+                        <h3>t</h3>
+                        <h3>m</h3>
+                        <h3>e</h3>
+                    </div>
+                </div>
+                <div class="intro">
+                    <div class="title">
+                        <h5 class="split">education</h5>
+                    </div>
+                    <div class="int-item">
+                        <div class="day">
+                            <h5>2006</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="content">
+                            <p>덕성여자고등학교 졸업</p>
+                        </div>
+                    </div>
+                    <div class="int-item">
+                        <div class="day">
+                            <h5>2009</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="content">
+                            <p>한양여자대학교 졸업 / 인테리어디자인</p>
+                        </div>
+                    </div>
+                    <div class="int-item">
+                        <div class="day">
+                            <h5>2010</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="content">
+                            <p>한양여자대학교 학점은행제 이수</p>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h5 class="split">work</h5>
+                    </div>
+                    <div class="int-item">
+                        <div class="day">
+                            <h5>2010 - 2012</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="content">
+                            <p>우리은행본사 / 편집디자인(행원)</p>
+                        </div>
+                    </div>
+                    <div class="int-item">
+                        <div class="day">
+                            <h5>2013 - 2014</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="content">
+                            <p>새날기획 / 편집디자인</p>
+                        </div>
+                    </div>
+                    <div class="int-item">
+                        <div class="day">
+                            <h5>2015 - 2024</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="content">
+                            <p>문컬렉션 / 웹디자인(팀장)</p>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h5 class="split">certification</h5>
+                    </div>
+                    <div class="int-item">
+                        <div class="day">
+                            <h5>2025.04</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="content">
+                            <p>GTQ 포토샵 1급</p>
+                        </div>
+                    </div>
+                    <div class="int-item">
+                        <div class="day">
+                            <h5>2025.05</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="content">
+                            <p>GTQ 일러스트 1급</p>
+                        </div>
+                    </div>
+                    <div class="int-item">
+                        <div class="day">
+                            <h5>2025.05</h5>
+                        </div>
+                        <div class="circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="content">
+                            <p>웹디자인 기능사</p>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <h5 class="split">skills</h5>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="skills-logo">
+                        <div class="logo-group">
+                            <img src="./img/ps.png" alt="포토샵">
+                            <img src="./img/ai.png" alt="일러스트">
+                            <img src="./img/pr.png" alt="프리미어프로">
+                            <img src="./img/figma01.png" alt="피그마">
+                            <img src="./img/html.png" alt="HTML">
+                            <img src="./img/css.png" alt="CSS">
+                            <img src="./img/jq.png" alt="jQ">
+                        </div>
+                        <div class="logo-group">
+                            <img src="./img/ps.png" alt="포토샵">
+                            <img src="./img/ai.png" alt="일러스트">
+                            <img src="./img/pr.png" alt="프리미어프로">
+                            <img src="./img/figma01.png" alt="피그마">
+                            <img src="./img/html.png" alt="HTML">
+                            <img src="./img/css.png" alt="CSS">
+                            <img src="./img/jq.png" alt="jQ">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="hidden">
+                <main id="horizontal">
+                    <section class="my-story">
+                        <div class="titel-story">
+                            <h3>m</h3>
+                            <h3>y</h3>
+                            <h3>s</h3>
+                            <h3>t</h3>
+                            <h3>o</h3>
+                            <h3>r</h3>
+                            <h3>y</h3>
+                        </div>
+                    </section>
+                    <section class="story_container">
+                        <div class="st_item">
+                            <h5>2004 - 2005</h5>
+                            <div class="st_item_box">
+                                <img src="./img/IMG_1529.png" alt=" 입시미술">
+                                <h5>adolescence</h5>
+                                <!-- <p>기초적인 조형 감각과 표현 능력을 다지는
+                                    과정 속에서 디자인의 기본기를 탄탄히
+                                    쌓을 수 있었고, 이는 이후 전공을 선택하는
+                                    데 있어 중요한 기반이 되었습니다.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="st_item">
+                            <h5>2006 - 2009</h5>
+                            <div class="st_item_box">
+                                <img src="./img/완결.png" alt=" 인테리어">
+                                <h5>university</h5>
+                                <!-- <p>공간을 바라보는 시각과 문제를 해결하는
+                                    사고를 배울 수 있었습니다.</p>
+                                <p>
+                                    이러한 배움은 저에게 창의적인 사고를 확장할
+                                    수 있는 중요한 계기가 되었고, 틀에 얽매이지
+                                    않는 다양한 시도를 가능하게 해주었습니다.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="st_item">
+                            <h5>2009 - 2010</h5>
+                            <div class="st_item_box">
+                                <img src="./img/2층 복도 이미지.jpg" alt=" 인테리어">
+                                <h5>interior work</h5>
+                                <!-- <p>기초적인 조형 감각과 표현 능력을 다지는
+                                    과정 속에서 디자인의 기본기를 탄탄히
+                                    쌓을 수 있었고, 이는 이후 전공을 선택하는
+                                    데 있어 중요한 기반이 되었습니다.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="st_item">
+                            <h5>2010 - 2012</h5>
+                            <div class="st_item_box">
+                                <img src="./img/2011년-06월.png" alt=" 우리은행">
+                                <h5>Editorial work</h5>
+                                <!-- <p>편집디자인 작업을 진행하며 디자인의
+                                    다른 매력을 느끼게 되었습니다.</p>
+                                <p>편집디자인 프로젝트를 수행하며 레이아웃
+                                    구성과 시각적 흐름을 설계하는 과정에 큰
+                                    매력을 느꼈습니다.
+                                </p> -->
+                            </div>
+                        </div>
+                    </section>
+                    <section class="story_container">
+                        <div class="st_item">
+                            <h5>2015 - 2024</h5>
+                            <div class="st_item_box">
+                                <img src="./img/맨투맨.jpg" alt="합성">
+                                <h5>Compositing</h5>
+                                <!-- <p>포토샵을 활용하여 다양한 합성물을
+                                    제작하는 경험이 있습니다.</p>
+                                <p>여러 합성 기법을 활용하여 독창적이고 완성도
+                                    높은 제작물을 제작하였으며, 이를 통해
+                                    시각적 표현 능력과 문제 해결 능력을 함께
+                                    발전시킬 수 있었습니다.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="st_item">
+                            <h5>2015 - 2024</h5>
+                            <div class="st_item_box">
+                                <img src="./img/룩북22.jpg" alt="인물보정">
+                                <h5>Photo Manipulation</h5>
+                                <!-- <p>포토샵을 활용하여 다양한 사진을
+                                    전문적으로 보정할 수 있습니다.</p>
+                                <p>포토샵을 활용하여 이미지의 색감과
+                                    퀄리티를 조정하고, 다양한 사진을
+                                    최적화된 상태로 보정할 수 있습니다.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="st_item">
+                            <h5>2015 - 2024</h5>
+                            <div class="st_item_box">
+                                <video src="./img/KakaoTalk_20260213_181454596.mp4" muted autoplay loop></video>
+                                <h5>web design</h5>
+                                <!-- <p>상세 페이지 및 상품 배너 등 다양한 레이아웃 디자인 경험있습니다.</p>
+                                <p>상세 페이지, 상품 배너 등 다양한 레이아웃
+                                    디자인 프로젝트를 수행하며 기획력과
+                                    시각적 구성 능력을 함께 발전시켰습니다.
+                                </p> -->
+                            </div>
+                        </div>
+                        <div class="st_item">
+                            <h5>2024 - 2025</h5>
+                            <div class="st_item_box">
+                                <img src="./img/패키지.png" alt="패키지">
+                                <h5>Packaging Design</h5>
+                                <!-- <p>편집디자인 작업을 진행하며 디자인의
+                                    또 다른 매력을 느끼게 되었습니다.</p>
+                                <p>편집디자인 프로젝트를 수행하며 레이아웃
+                                    구성과 시각적 흐름을 설계하는 과정에 큰
+                                    매력을 느꼈습니다. 이를 계기로
+                                    편집디자인에 대한 관심이 더욱 깊어졌고,
+                                    보다 완성도 높은 결과물을 만들기 위해
+                                    꾸준히 노력하게 되었습니다.
+                                </p> -->
+                            </div>
+                        </div>
+                    </section>
+                </main>
+            </div>
+            <section class="hobbies">
+                <div class="inner">
+                    <div class="hobbies_text">
+                        <div class="titel-hobbies-h3">
+                            <h3>h</h3>
+                            <h3>o</h3>
+                            <h3>b</h3>
+                            <h3>b</h3>
+                            <h3>i</h3>
+                            <h3>e</h3>
+                            <h3>s</h3>
+                        </div>
+                        <div class="hobbies_text_box">
+                            <p>도전하는 것을 좋아하는 성격에 맞게 취미도 낚시, 여행, 블로그 등등 소개합니다.</p>
+                        </div>
+                    </div>
+                    <ul class="hobbies_list">
+                        <li>
+                            <div class="hobbies_img1 upBox">
+                                <img src="./img/img05.png" alt="낚시">
+                                <div class="hobbies_txt">
+                                    <p>fishing</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hobbies_img2 upBox">
+                                <img src="./img/img06.png" alt="블로그">
+                                <video src="./img/KakaoTalk_20260223_144625167.mp4" muted autoplay loop></video>
+                                <div class="hobbies_txt">
+                                    <p>blog</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hobbies_img3 upBox">
+                                <img src="./img/img07.png" alt="여행">
+                                <video src="./img/KakaoTalk_20260223_160608016.mp4" muted autoplay loop></video>
+                                <div class="hobbies_txt">
+                                    <p>Travel</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="contact">
+                <div class="titel-contact">
+                    <h3>c</h3>
+                    <h3>o</h3>
+                    <h3>n</h3>
+                    <h3>t</h3>
+                    <h3>a</h3>
+                    <h3>c</h3>
+                    <h3>t</h3>
+                    <h3>m</h3>
+                    <h3>e</h3>
+                </div>
+                <div class="item_box">
+                    <div class="item">
+                        <h5>Information</h5>
+                        <p class="aboutLink">about me</p>
+                        <p class="skillLink">skills</p>
+                        <p class="storyLink">my story</p>
+                        <p class="hobbieLink">hobbies</p>
+                    </div>
+                    <div class="item">
+                        <h5>work</h5>
+                        <a href="#">
+                            <p>ui/ux design</p>
+                        </a>
+                        <a href="#">
+                            <p>web design</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <h5>process</h5>
+                        <a href="#">
+                            <p>process</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <h5>Contact me</h5>
+                        <a href="#">
+                            <p>010.6798.3299</p>
+                        </a>
+                        <a href="#">
+                            <p>leeeuna0423@naver.com</p>
+                        </a>
+                        <a href="#">
+                            <p>423_ea</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lee">
+                <p>l</p>
+                <p>e</p>
+                <p>e</p>
+                <p>e</p>
+                <p>u</p>
+                <p>n</p>
+                <p>a</p>
+            </div>
+        </footer>
+        <!-- <div class="top"><i class="fa-solid fa-arrow-up"></i></div> -->
+    </div>
+    <script>
+
+        // $(document).ready(function () {
+        //     $(window).scroll(function () {
+        //         let st = $(this).scrollTop();
+        //         console.log(st);
+        //     });
+        // });
+        $(function () {
+
+            let ibt = $(".icon-bt > .bt");
+            let pu = $(".popup-box");
+
+            let ibtL = $(".icon-bt-left > .bt");
+            let puL = $(".popup_left");
+
+            // 🔹 오른쪽 버튼
+            ibt.click(function (e) {
+                e.stopPropagation();
+
+                let idx = ibt.index(this);
+
+                pu.not(pu.eq(idx)).removeClass("act");
+                pu.eq(idx).toggleClass("act");
+
+                puL.removeClass("act");
+
+                // 🔥 왼쪽 메뉴 닫기
+                $('.menu-wrap, .overlay').removeClass('active');
+                ibtL.removeClass("fa-xmark").addClass("fa-bars");
+            });
+
+            // 🔥 왼쪽 버튼 (통합)
+            $('.icon-bt-left').click(function (e) {
+                e.stopPropagation();
+
+                ibtL.toggleClass("fa-bars fa-xmark"); // 아이콘 변경
+                puL.toggleClass("act");
+                pu.removeClass("act");
+
+                $('.menu-wrap, .overlay').toggleClass('active'); // 🔥 핵심
+            });
+
+            // 🔹 바깥 클릭
+            $(document).click(function () {
+                pu.removeClass("act");
+                puL.removeClass("act");
+
+                $('.menu-wrap, .overlay').removeClass('active');
+
+                ibtL.removeClass("fa-xmark").addClass("fa-bars");
+            });
+
+            // 🔹 overlay 클릭
+            $('.overlay').click(function (e) {
+                e.stopPropagation();
+
+                $('.menu-wrap, .overlay').removeClass('active');
+                puL.removeClass("act");
+
+                ibtL.removeClass("fa-xmark").addClass("fa-bars");
+            });
+
+        });
+        // 내소개
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        $(function () {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.about h3',
+                    start: 'top 85%',
+                    end: 'top 50%',
+                    scrub: 2,
+                    // markers: true,
+                }
+            })
+                .fromTo('.about h3:nth-child(4)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.2)
+                .fromTo('.about h3:nth-child(3)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.4)
+                .fromTo('.about h3:nth-child(5)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.4)
+                .fromTo('.about h3:nth-child(2)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.6)
+                .fromTo('.about h3:nth-child(6)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.6)
+                .fromTo('.about h3:nth-child(1)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.8)
+                .fromTo('.about h3:nth-child(7)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.8)
+
+
+        });
+
+        // 왼쪽
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".intro-left",
+                start: "top 80%",
+                end: "+=400",
+                scrub: 1,
+                // markers: true
+            }
+        });
+
+        tl.fromTo(".intro-left p",
+            { yPercent: 100, autoAlpha: 0 },
+            { yPercent: 0, autoAlpha: 1, duration: 1, ease: "circ.out", stagger: { each: 1 } }
+        );
+
+
+        // 오른쪽
+
+        const tl1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".intro-right",
+                start: "top 80%",
+                end: "+=400",
+                scrub: 1,
+                // markers: true
+            }
+        });
+        tl1.fromTo(".intro-right p",
+            { yPercent: 100, autoAlpha: 0 },
+            { yPercent: 0, autoAlpha: 1, duration: 1, ease: "circ.out", stagger: { each: 1 } }
+        );
+
+        gsap.utils.toArray(".split").forEach(target => {
+            let split = new SplitType(target, {
+                type: "lines, words, chars"
+            });
+
+            gsap.from(split.chars, {
+                yPercent: -50,
+                autoAlpha: 0,
+                ease: "back.out",
+                stagger: {
+                    amount: 1,
+                    from: "random"
+                },
+                scrollTrigger: {
+                    trigger: target,
+                    start: "top 90%",
+                    end: "+=300",
+                    scrub: 1,
+                    // markers: true
+                }
+            });
+        });
+
+        gsap.utils.toArray(".int-item").forEach(item => {
+            gsap.from(item, {
+                yPercent: 100,
+                autoAlpha: 0,
+                duration: 2,
+                ease: "circ.out",
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 80%",
+                    end: "top 60%",
+                    scrub: 1,
+                    // markers: true
+                }
+            });
+
+
+        });
+
+        // 나의 스토리
+
+        $(function () {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.titel-story h3',
+                    start: 'top 85%',
+                    end: 'top 20%',
+                    scrub: 2,
+                    // markers: true,
+                }
+            })
+                .fromTo('.titel-story h3:nth-child(4)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.2)
+                .fromTo('.titel-story h3:nth-child(3)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.4)
+                .fromTo('.titel-story h3:nth-child(5)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.4)
+                .fromTo('.titel-story h3:nth-child(2)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.6)
+                .fromTo('.titel-story h3:nth-child(6)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.6)
+                .fromTo('.titel-story h3:nth-child(1)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.8)
+                .fromTo('.titel-story h3:nth-child(7)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.8)
+        });
+
+        const horizontal = document.querySelector("#horizontal");
+        const sections = gsap.utils.toArray("#horizontal > section");
+
+        let scrollTween = gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: horizontal,
+                start: "top top",
+                end: () => "+=" + (horizontal.offsetWidth - innerWidth),
+                pin: true,
+                ainicipatePin: 1,
+                scrub: 1,
+                invalidateOnRefresh: true
+            }
+        });
+
+        // 취미
+        $(function () {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.titel-hobbies-h3>h3',
+                    start: 'top 40%',
+                    end: 'bottem 20%',
+                    scrub: 2,
+                    // markers: true,
+                }
+            })
+                .fromTo('.titel-hobbies-h3 h3:nth-child(4)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.2)
+                .fromTo('.titel-hobbies-h3 h3:nth-child(3)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.4)
+                .fromTo('.titel-hobbies-h3 h3:nth-child(5)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.4)
+                .fromTo('.titel-hobbies-h3 h3:nth-child(2)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.6)
+                .fromTo('.titel-hobbies-h3 h3:nth-child(6)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.6)
+                .fromTo('.titel-hobbies-h3 h3:nth-child(1)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.8)
+                .fromTo('.titel-hobbies-h3 h3:nth-child(7)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.8)
+        });
+
+        gsap.utils.toArray(".hobbies_text_box").forEach(item => {
+            gsap.from(item, {
+                yPercent: -600,
+                autoAlpha: 0,
+                duration: 2,
+                ease: "circ.out",
+                scrollTrigger: {
+                    trigger: item,
+                    start: "top 80%",
+                    end: "top 60%",
+                    scrub: 1,
+                    // markers: true
+                }
+            });
+        });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        let upBox = document.querySelectorAll(".upBox");
+
+        let tl2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".hobbies",
+                pin: true,
+                scrub: 3,
+                start: "top top",
+                end: "+=400%",
+                // markers: true,
+            }
+        });
+
+        tl2.from(upBox, { 'y': '400%', 'duration': '8', 'ease': 'none', 'stagger': '6' })
+        tl2.to(upBox, { 'y': '0', 'duration': '1', 'ease': 'none', 'stagger': '1' })
+        // window.addEventListener('scroll', handleScroll);
+        // window.addEventListener('resize', handleScroll);
+
+        // function handleScroll() {
+        //     var scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
+        //     fix(scrollPos)
+
+        //     function fix(scrollPos) {
+        //         var hobbiesText = document.querySelector(".titel-hobbies");
+        //         var hobbiesTextbox = document.querySelector(".hobbies_text_box");
+
+        //         const isActive = scrollPos > 8200 && scrollPos <= 12200;
+
+        //         hobbiesText.classList.toggle('on', isActive);
+        //         hobbiesTextbox.classList.toggle('on', isActive);
+
+        //     }
+        // }
+
+        // 연락처
+        $(function () {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.titel-contact h3',
+                    start: 'top 85%',
+                    end: 'top 20%',
+                    scrub: 2,
+                    // markers: true,
+                }
+            })
+                .fromTo('.titel-contact h3:nth-child(5)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.2)
+                .fromTo('.titel-contact h3:nth-child(4)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.4)
+                .fromTo('.titel-contact h3:nth-child(6)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.4)
+                .fromTo('.titel-contact h3:nth-child(3)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.6)
+                .fromTo('.titel-contact h3:nth-child(7)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.6)
+                .fromTo('.titel-contact h3:nth-child(2)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.8)
+                .fromTo('.titel-contact h3:nth-child(8)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 0.8)
+                .fromTo('.titel-contact h3:nth-child(1)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 1)
+                .fromTo('.titel-contact h3:nth-child(9)', { y: -100, scale: 0.9, opacity: 0 }, { y: 100, scale: 1, opacity: 1, ease: 'none' }, 1)
+        });
+
+        $(function () {
+
+            $(".aboutLink").click(function () {
+                $("html, body").animate({
+                    scrollTop: 1500
+                }, 500);
+            });
+
+            $(".skillLink").click(function () {
+                $("html, body").animate({
+                    scrollTop: 2542
+                }, 500);
+            });
+
+            $(".storyLink").click(function () {
+                $("html, body").animate({
+                    scrollTop: 3446
+                }, 500);
+            });
+            $(".hobbieLink").click(function () {
+                $("html, body").animate({
+                    scrollTop: 10400
+                }, 500);
+            });
+
+        });
+    </script>
+</body>
+
+</html>
