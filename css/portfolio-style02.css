@@ -1,6 +1,69 @@
 @charset "UTF-8";
 
 @font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraLight.woff2') format('woff2');
+    font-weight: 200;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'NamyangjuGothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-2@1.0/NYJGothicL.woff2') format('woff2');
     font-weight: 300;
@@ -208,7 +271,11 @@
 body {
     color: #fff;
     background-color: #000000;
-
+    overflow-x: hidden;
+    --fa-family-classic: "Font Awesome 7 Free";
+    overflow-x: hidden;
+    width: 1920px;
+    margin: 0 auto;
 }
 
 ul {
@@ -217,6 +284,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: #fff;
 }
 
 img {
@@ -235,10 +303,11 @@ section {
     overflow: hidden;
 }
 
+
 /********* 메뉴바 *********/
 header {
     width: 100%;
-    height: 135vh;
+    height: 145vh;
     background-color: #000;
 }
 
@@ -259,7 +328,7 @@ header .container .left .icon-bt-left>i {
     cursor: pointer;
     position: fixed;
     /* display: none; */
-    z-index: 10000;
+    z-index: 1000;
 }
 
 header .container .right .icon-bt .bt {
@@ -322,8 +391,8 @@ header .container .gnb .title_b .title_b_box {
 
 header .container .gnb .title_b:hover .title_b_box {
     transform: translateY(-49px);
-
 }
+
 
 header .container .gnb>li {
     width: 150px;
@@ -439,23 +508,9 @@ header .right .popup {
 }
 
 header .right .popup .popup-box {
-    width: 300px;
-    height: 400px;
+    width: 220px;
+    height: 270px;
     display: none;
-}
-
-header .left .popup_left {
-    width: 500px;
-    height: 500px;
-    display: none;
-    position: fixed;
-    top: 90px;
-    left: 50px;
-    z-index: 2000;
-}
-
-header .right .popup .popup-box.act {
-    display: block;
 }
 
 header .left .popup_left.act {
@@ -464,7 +519,7 @@ header .left .popup_left.act {
 
 header .right .popup .popup-box>img {
     width: 100%;
-    height: 300px;
+    height: 200px;
 }
 
 header .right .popup .popup-box .txt {
@@ -475,24 +530,20 @@ header .right .popup .popup-box .txt {
 }
 
 header .right .popup .popup-box .txt>p:nth-child(1) {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
 header .right .popup .popup-box .txt>p:nth-child(2) {
     text-transform: lowercase;
+    font-size: 0.9rem;
+    margin-top: 5px;
 
 }
 
-header .left .popup_left {
-    background-color: #fff;
-    color: #000;
-    position: absolute;
-    top: 280%;
-    text-transform: uppercase;
-    padding: 20px;
+header .right .popup .popup-box.act {
+    display: block;
 }
-
 
 header .right .popup .phone {
     background-color: #fff;
@@ -505,7 +556,7 @@ header .right .popup .phone::after {
     content: '';
     position: absolute;
     top: -10px;
-    left: 108px;
+    left: 28px;
     border-width: 0 8px 10px 8px;
     border-style: solid;
     border-color: transparent transparent #ffffff transparent;
@@ -522,7 +573,7 @@ header .right .popup .mail::after {
     content: '';
     position: absolute;
     top: -10px;
-    left: 155px;
+    left: 74px;
     border-width: 0 8px 10px 8px;
     border-style: solid;
     border-color: transparent transparent #ffffff transparent;
@@ -539,7 +590,7 @@ header .right .popup .kakao::after {
     content: '';
     position: absolute;
     top: -10px;
-    left: 198px;
+    left: 119px;
     border-width: 0 8px 10px 8px;
     border-style: solid;
     border-color: transparent transparent #ffffff transparent;
@@ -547,33 +598,38 @@ header .right .popup .kakao::after {
 
 header .right .popup .profile {
     width: 390px;
-    height: 950px;
+    height: 720px;
     background-color: #000000;
     color: #000;
     border-radius: 1vw;
     position: relative;
-    padding: 30px;
+    padding: 20px;
     color: #fff;
     border: 1px solid #ffffff;
 }
 
+header .right .popup .profile .profile-left {
+    display: flex;
+}
+
 header .right .popup .profile .profile-left>img {
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
     margin-bottom: 30px;
     object-fit: contain;
-    margin-left: -25px;
+    margin-left: -15px;
 }
 
 header .right .popup .profile .profile-left .profile-title {
     display: flex;
-    gap: 30px;
+    gap: 10px;
     margin-bottom: 30px;
+    font-size: 0.9rem;
+    line-height: 25px;
 }
 
 header .right .popup .profile .profile-left .profile-title .title-box {
     text-transform: uppercase;
-    line-height: 25px;
 }
 
 header .right .popup .profile .profile-right .profile-right-item>h5 {
@@ -649,14 +705,14 @@ header .right .popup .profile::after {
 
 header .me-box {
     position: relative;
-    height: 1800px;
+    height: 1700px;
 }
 
 header .me-box .me-img {
     width: 400px;
     height: 550px;
     position: sticky;
-    top: 560px;
+    top: 460px;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -675,7 +731,7 @@ header .me-box>h5 {
     color: #fff;
     font-weight: 400;
     position: absolute;
-    top: 700px;
+    top: 600px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -1085,7 +1141,7 @@ main .hobbies .inner .hobbies_text .titel-hobbies-h3>h3 {
 
 main .hobbies .inner .hobbies_text .hobbies_text_box {
     position: absolute;
-    bottom: 37%;
+    top: 65%;
     left: 20px;
 }
 
@@ -1120,10 +1176,10 @@ main .hobbies .inner .hobbies_list .upBox>video {
 }
 
 main .hobbies .inner .hobbies_list .upBox>video {
-    width: 65%;
+    width: 55%;
     position: absolute;
     top: 63%;
-    left: 46%;
+    left: 47%;
     transform: translate(-50%, -50%);
 }
 
@@ -1132,9 +1188,9 @@ main .hobbies .inner .hobbies_list .upBox .hobbies_txt>P {
     position: absolute;
     transform: rotate(90DEG);
     top: 6%;
-    right: 5.5%;
-    color: #000;
-    font-size: 1.2rem;
+    right: 12.5%;
+    color: #000000;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -1143,9 +1199,9 @@ main .hobbies .inner .hobbies_list .hobbies_img2 .hobbies_txt>P {
     position: absolute;
     transform: rotate(90DEG);
     top: 24%;
-    right: 7.5%;
+    right: 14%;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -1154,9 +1210,9 @@ main .hobbies .inner .hobbies_list .hobbies_img3 .hobbies_txt>P {
     position: absolute;
     transform: rotate(90DEG);
     top: 41.5%;
-    right: 6%;
+    right: 12.5%;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -1327,4 +1383,36 @@ footer .lee>p {
 
 footer .lee>p:hover {
     color: #fff;
+}
+
+/* 탑 */
+.top {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    transform: translateY(-50%);
+    border: 1px solid #ffffff;
+    display: none;
+    background-color: #000;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.top>i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.top.act10 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
